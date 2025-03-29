@@ -30,8 +30,9 @@ export default function LoginPage() {
           src="/house.png"
           alt="Image"
           className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
-          width={...}
-          height={...}
+          fill
+          sizes="50vw"
+          priority
         />
       </div>
     </div>
