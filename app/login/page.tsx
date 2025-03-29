@@ -1,5 +1,6 @@
-import { GalleryVerticalEnd } from "lucide-react";
+// import { GalleryVerticalEnd } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Image from "next/image";
 
 import { LoginForm } from "@/components/login-form";
 
@@ -25,10 +26,12 @@ export default function LoginPage() {
         </div>
       </div>
       <div className="bg-muted relative hidden lg:block">
-        <img
+        <Image
           src="/house.png"
           alt="Image"
           className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+          width={...}
+          height={...}
         />
       </div>
     </div>

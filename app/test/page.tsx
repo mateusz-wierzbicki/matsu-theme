@@ -104,9 +104,9 @@ import {
   Bold,
   Italic,
   Underline,
-  AlignLeft,
-  AlignCenter,
-  AlignRight,
+  // AlignLeft,
+  // AlignCenter,
+  // AlignRight,
 } from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
 import {
