@@ -1,6 +1,5 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "extends": "none",
   "name": "matsu-theme",
   "type": "registry:style",
   "cssVars": {
