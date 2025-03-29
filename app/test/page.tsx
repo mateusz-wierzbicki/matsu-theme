@@ -1002,6 +1002,14 @@ function DateRangePickerDemo() {
     to: undefined,
   });
 
+  const handleSelect = (
+    range: { from: Date | undefined; to: Date | undefined } | undefined
+  ) => {
+    if (range) {
+      setDateRange(range);
+    }
+  };
+
   return (
     <div className="grid gap-2">
       <Popover>
@@ -1032,7 +1040,7 @@ function DateRangePickerDemo() {
           <Calendar
             mode="range"
             selected={dateRange}
-            onSelect={setDateRange}
+            onSelect={handleSelect}
             numberOfMonths={2}
             initialFocus
           />
