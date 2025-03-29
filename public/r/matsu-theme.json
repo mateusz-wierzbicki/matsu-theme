@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "matsu-theme",
-  "type": "registry:style",
+  "type": "registry:theme",
   "cssVars": {
     "theme": {
       "font-sans": "var(--font-nunito)"
