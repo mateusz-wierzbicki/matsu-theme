@@ -1,0 +1,58 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "matsu-theme",
+  "homepage": "https://your-site.com",
+  "styles": [
+    {
+      "name": "matsu",
+      "label": "Matsu",
+      "css": "app/globals.css",
+      "preview": {
+        "light": "/preview-light.png",
+        "dark": "/preview-dark.png"
+      }
+    }
+  ],
+  "items": [
+    {
+      "name": "app-sidebar",
+      "type": "components:ui",
+      "dependencies": ["@/components/ui/sidebar", "@/components/ui/avatar"],
+      "files": [
+        "components/app-sidebar.tsx",
+        "components/nav-main.tsx",
+        "components/nav-documents.tsx",
+        "components/nav-secondary.tsx",
+        "components/nav-user.tsx"
+      ]
+    },
+    {
+      "name": "site-header",
+      "type": "components:ui",
+      "dependencies": [
+        "@/components/ui/button",
+        "@/components/ui/separator",
+        "@/components/ui/sidebar"
+      ],
+      "files": ["components/site-header.tsx"]
+    },
+    {
+      "name": "chart-area-interactive",
+      "type": "components:ui",
+      "dependencies": ["recharts"],
+      "files": ["components/chart-area-interactive.tsx"]
+    },
+    {
+      "name": "section-cards",
+      "type": "components:ui",
+      "dependencies": ["@/components/ui/card"],
+      "files": ["components/section-cards.tsx"]
+    },
+    {
+      "name": "data-table",
+      "type": "components:ui",
+      "dependencies": [],
+      "files": ["components/data-table.tsx"]
+    }
+  ]
+}
