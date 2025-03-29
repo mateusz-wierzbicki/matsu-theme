@@ -4,97 +4,10 @@
   "homepage": "https://matsu-theme.vercel.app",
   "items": [
     {
-      "name": "matsu-theme",
-      "type": "registry:style",
-      "description": "Ghibli Studio style inspired theme for shadcn/ui with watercolor paper texture and unique color palette",
-      "registryDependencies": [],
-      "cssVars": {
-        "theme": {
-          "font-sans": "var(--font-nunito)",
-          "font-serif": "var(--font-pt-serif)",
-          "font-mono": "var(--font-geist-mono)",
-          "shadow-xs": "0 2px 0 0 var(--border)",
-          "shadow-sm": "0 2px 0 0 var(--border)",
-          "shadow-md": "0 2px 0 0 var(--border)",
-          "shadow-lg": "0 2px 0 0 var(--border)",
-          "shadow-xl": "0 2px 0 0 var(--border)",
-          "shadow-2xl": "0 2px 0 0 var(--border)",
-          "shadow-3xl": "0 2px 0 0 var(--border)"
-        },
-        "light": {
-          "background": "oklch(0.91 0.048 83.6)",
-          "foreground": "oklch(0.41 0.077 78.9)",
-          "card": "oklch(0.92 0.042 83.6)",
-          "card-foreground": "oklch(0.41 0.077 74.3)",
-          "popover": "oklch(0.92 0.042 83.6)",
-          "popover-foreground": "oklch(0.41 0.077 74.3)",
-          "primary": "oklch(0.71 0.097 111.7)",
-          "primary-foreground": "oklch(0.98 0.005 0)",
-          "primary-border": "oklch(0.59 0.096 111.8)",
-          "secondary": "oklch(0.88 0.055 83.6)",
-          "secondary-foreground": "oklch(0.51 0.077 78.9)",
-          "muted": "oklch(0.86 0.064 83.7)",
-          "muted-foreground": "oklch(0.51 0.077 74.3)",
-          "accent": "oklch(0.86 0.055 83.6)",
-          "accent-foreground": "oklch(0.26 0.016 0)",
-          "destructive": "oklch(0.63 0.24 29.2)",
-          "destructive-foreground": "oklch(0.97 0.018 0)",
-          "destructive-border": "oklch(0.43 0.24 29.2)",
-          "border": "oklch(0.74 0.063 80.8)",
-          "input": "oklch(0.74 0.063 80.8)",
-          "ring": "oklch(0.51 0.077 74.3)",
-          "chart-1": "oklch(0.66 0.19 41.6)",
-          "chart-2": "oklch(0.68 0.16 184.9)",
-          "chart-3": "oklch(0.48 0.09 210.9)",
-          "chart-4": "oklch(0.85 0.19 85.4)",
-          "chart-5": "oklch(0.74 0.19 66.3)",
-          "sidebar": "oklch(0.87 0.059 83.7)",
-          "sidebar-foreground": "oklch(0.41 0.077 78.9)",
-          "sidebar-primary": "oklch(0.26 0.016 0)",
-          "sidebar-primary-foreground": "oklch(0.98 0.005 0)",
-          "sidebar-accent": "oklch(0.83 0.058 83.6)",
-          "sidebar-accent-foreground": "oklch(0.26 0.016 0)",
-          "sidebar-border": "oklch(0.91 0.005 0)",
-          "sidebar-ring": "oklch(0.71 0.005 0)"
-        }
-      },
-      "css": {
-        "@layer base": {
-          "font-medium": {
-            "font-weight": "700 !important"
-          },
-          "border": {
-            "border-width": "2px !important"
-          },
-          "shadow-primary": {
-            "box-shadow": "0 2px 0 0 var(--primary-border)"
-          },
-          "shadow-destructive": {
-            "box-shadow": "0 2px 0 0 var(--destructive)"
-          },
-          "shadow-destructive-border": {
-            "box-shadow": "0 2px 0 0 var(--destructive-border)"
-          },
-          "texture": {
-            "background-image": "url('/texture.jpg')",
-            "background-size": "100% 100%",
-            "background-repeat": "repeat",
-            "opacity": "0.12",
-            "mix-blend-mode": "multiply",
-            "z-index": "100",
-            "position": "fixed",
-            "inset": "0",
-            "width": "100vw",
-            "height": "100vh",
-            "pointer-events": "none"
-          }
-        }
-      }
-    },
-    {
       "name": "button",
       "type": "registry:component",
-      "description": "Matsu-themed button component",
+      "title": "Button",
+      "description": "A simple button component.",
       "files": [
         {
           "path": "components/ui/button.tsx",
@@ -103,202 +16,31 @@
       ]
     },
     {
-      "name": "card",
-      "type": "registry:component",
-      "description": "Matsu-themed card component",
-      "files": [
-        {
-          "path": "components/ui/card.tsx",
-          "type": "registry:component"
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "custom-theme",
+      "type": "registry:theme",
+      "cssVars": {
+        "light": {
+          "background": "oklch(1 0 0)",
+          "foreground": "oklch(0.141 0.005 285.823)",
+          "primary": "oklch(0.546 0.245 262.881)",
+          "primary-foreground": "oklch(0.97 0.014 254.604)",
+          "ring": "oklch(0.746 0.16 232.661)",
+          "sidebar-primary": "oklch(0.546 0.245 262.881)",
+          "sidebar-primary-foreground": "oklch(0.97 0.014 254.604)",
+          "sidebar-ring": "oklch(0.746 0.16 232.661)"
+        },
+        "dark": {
+          "background": "oklch(1 0 0)",
+          "foreground": "oklch(0.141 0.005 285.823)",
+          "primary": "oklch(0.707 0.165 254.624)",
+          "primary-foreground": "oklch(0.97 0.014 254.604)",
+          "ring": "oklch(0.707 0.165 254.624)",
+          "sidebar-primary": "oklch(0.707 0.165 254.624)",
+          "sidebar-primary-foreground": "oklch(0.97 0.014 254.604)",
+          "sidebar-ring": "oklch(0.707 0.165 254.624)"
         }
-      ]
-    },
-    {
-      "name": "input",
-      "type": "registry:component",
-      "description": "Matsu-themed input component",
-      "files": [
-        {
-          "path": "components/ui/input.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "calendar",
-      "type": "registry:component",
-      "description": "Matsu-themed calendar component",
-      "files": [
-        {
-          "path": "components/ui/calendar.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "accordion",
-      "type": "registry:component",
-      "description": "Matsu-themed accordion component",
-      "files": [
-        {
-          "path": "components/ui/accordion.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "alert",
-      "type": "registry:component",
-      "description": "Matsu-themed alert component",
-      "files": [
-        {
-          "path": "components/ui/alert.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "alert-dialog",
-      "type": "registry:component",
-      "description": "Matsu-themed alert dialog component",
-      "files": [
-        {
-          "path": "components/ui/alert-dialog.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "badge",
-      "type": "registry:component",
-      "description": "Matsu-themed badge component",
-      "files": [
-        {
-          "path": "components/ui/badge.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "checkbox",
-      "type": "registry:component",
-      "description": "Matsu-themed checkbox component",
-      "files": [
-        {
-          "path": "components/ui/checkbox.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "dialog",
-      "type": "registry:component",
-      "description": "Matsu-themed dialog component",
-      "files": [
-        {
-          "path": "components/ui/dialog.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "sheet",
-      "type": "registry:component",
-      "description": "Matsu-themed sheet component",
-      "files": [
-        {
-          "path": "components/ui/sheet.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "tabs",
-      "type": "registry:component",
-      "description": "Matsu-themed tabs component",
-      "files": [
-        {
-          "path": "components/ui/tabs.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "table",
-      "type": "registry:component",
-      "description": "Matsu-themed table component",
-      "files": [
-        {
-          "path": "components/ui/table.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "switch",
-      "type": "registry:component",
-      "description": "Matsu-themed switch component",
-      "files": [
-        {
-          "path": "components/ui/switch.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "slider",
-      "type": "registry:component",
-      "description": "Matsu-themed slider component",
-      "files": [
-        {
-          "path": "components/ui/slider.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "radio-group",
-      "type": "registry:component",
-      "description": "Matsu-themed radio group component",
-      "files": [
-        {
-          "path": "components/ui/radio-group.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "textarea",
-      "type": "registry:component",
-      "description": "Matsu-themed textarea component",
-      "files": [
-        {
-          "path": "components/ui/textarea.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "toggle-group",
-      "type": "registry:component",
-      "description": "Matsu-themed toggle group component",
-      "files": [
-        {
-          "path": "components/ui/toggle-group.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "separator",
-      "type": "registry:component",
-      "description": "Matsu-themed separator component",
-      "files": [
-        {
-          "path": "components/ui/separator.tsx",
-          "type": "registry:component"
-        }
-      ]
+      }
     }
   ]
 }
