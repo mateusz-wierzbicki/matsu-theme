@@ -1003,10 +1003,13 @@ function DateRangePickerDemo() {
   });
 
   const handleSelect = (
-    range: { from: Date | undefined; to: Date | undefined } | undefined
+    range: { from: Date | undefined; to?: Date | undefined } | undefined
   ) => {
     if (range) {
-      setDateRange(range);
+      setDateRange({
+        from: range.from,
+        to: range.to,
+      });
     }
   };
 
