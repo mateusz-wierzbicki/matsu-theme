@@ -4,7 +4,7 @@
   "type": "registry:theme",
   "cssVars": {
     "theme": {
-      "font-sans": "var(--font-nunito)"
+      "--font-sans": "var(--font-nunito)"
     },
     "light": {
       "brand": "20 14.3% 4.1%"
