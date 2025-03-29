@@ -14,7 +14,7 @@ export default function Page() {
         {
           "--sidebar-width": "calc(var(--spacing) * 72)",
           "--header-height": "calc(var(--spacing) * 14)",
-          "background-color": "var(--sidebar-background)",
+          backgroundColor: "var(--sidebar-background)",
         } as React.CSSProperties
       }
     >
