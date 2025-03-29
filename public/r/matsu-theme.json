@@ -5,6 +5,12 @@
   "cssVars": {
     "theme": {
       "font-sans": "var(--font-nunito)"
+    },
+    "light": {
+      "brand": "20 14.3% 4.1%"
+    },
+    "dark": {
+      "brand": "20 14.3% 4.1%"
     }
   }
 }
