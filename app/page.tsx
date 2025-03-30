@@ -2,20 +2,24 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 export default function Page() {
   return (
     <div className="container mx-auto px-4 py-12 md:py-24">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-        {/* Left column - Text content */}
+      <div className="flex flex-col items-center justify-center text-center max-w-2xl mx-auto">
+        <Avatar className="w-16 h-16 mb-12 border-2 border-border">
+          <AvatarImage src="/matsu.png" />
+          <AvatarFallback>MW</AvatarFallback>
+        </Avatar>
         <div className="space-y-6">
           <h1 className="text-4xl font-extrabold font-serif tracking-tight lg:text-5xl">
             Matsu-theme for shadcn/ui
           </h1>
 
           <p className="text-xl text-foreground/80">
-            Ghibli Studio style inspired theme for shadcn/ui made by{" "}
+            Ghibli Studio inspired theme for shadcn/ui made by{" "}
             <a
+              target="_blank"
               href="https://x.com/matsugfx"
               className="underline hover:text-primary transition-colors"
             >
@@ -30,7 +34,7 @@ export default function Page() {
             texture.
           </p>
 
-          <div className="pt-4">
+          <div className="pt-4 flex flex-col items-center justify-center text-center">
             <h2 className="text-xl font-semibold font-serif mb-3">
               Example pages
             </h2>
@@ -46,17 +50,6 @@ export default function Page() {
               </Link>
             </div>
           </div>
-        </div>
-
-        {/* Right column - Image */}
-        <div className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-xl">
-          <Image
-            src="/house.png"
-            alt="Matsu Theme Illustration"
-            fill
-            priority
-            className="object-cover"
-          />
         </div>
       </div>
     </div>
