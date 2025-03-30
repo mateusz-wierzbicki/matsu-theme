@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "matsu-theme",
-  "type": "registry:style",
+  "type": "registry:theme",
   "cssVars": {
     "theme": {
       "font-sans": "Nunito, sans-serif",
@@ -57,6 +57,18 @@
         "width": "100vw",
         "height": "100vh",
         "pointer-events": "none"
+      },
+      "border": {
+        "border-width": "2px"
+      },
+      "shadow-primary": {
+        "box-shadow": "0 2px 0 0 var(--primary-border)"
+      },
+      "shadow-destructive": {
+        "box-shadow": "0 2px 0 0 var(--destructive)"
+      },
+      "shadow-destructive-border": {
+        "box-shadow": "0 2px 0 0 var(--destructive-border)"
       }
     }
   }
