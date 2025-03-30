@@ -4,10 +4,10 @@
   "type": "registry:style",
   "cssVars": {
     "theme": {
-      "font-sans": "Nunito, sans-serif"
+      "font-sans": "Nunito, sans-serif",
+      "font-serif": "PT Serif, serif"
     },
     "light": {
-      "brand": "20 14.3% 4.1%",
       "background": "oklch(0.91 0.048 83.6)",
       "foreground": "oklch(0.41 0.077 78.9)",
       "card": "oklch(0.92 0.042 83.6)",
@@ -43,6 +43,21 @@
       "sidebar-accent-foreground": "oklch(0.26 0.016 0)",
       "sidebar-border": "oklch(0.91 0.005 0)",
       "sidebar-ring": "oklch(0.71 0.005 0)"
+    },
+    "css": {
+      "texture": {
+        "background-image": "url(https://matsu-theme.vercel.app/texture.jpg)",
+        "background-size": "100% 100%",
+        "background-repeat": "repeat",
+        "opacity": "0.12",
+        "mix-blend-mode": "multiply",
+        "z-index": "100",
+        "position": "fixed",
+        "inset": "0",
+        "width": "100vw",
+        "height": "100vh",
+        "pointer-events": "none"
+      }
     }
   }
 }

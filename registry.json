@@ -14,6 +14,18 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:component",
+      "title": "Accordion",
+      "description": "A simple accordion component.",
+      "files": [
+        {
+          "path": "components/ui/accordion.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
