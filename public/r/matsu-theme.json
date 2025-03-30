@@ -43,7 +43,8 @@
       "sidebar-accent-foreground": "oklch(0.26 0.016 0)",
       "sidebar-border": "oklch(0.91 0.005 0)",
       "sidebar-ring": "oklch(0.71 0.005 0)"
-    },
+    }
+  },
     "css": {
       "texture": {
         "background-image": "url(https://matsu-theme.vercel.app/texture.jpg)",
