@@ -147,6 +147,9 @@ export default function ComponentTestPage() {
     console.log(values);
   }
 
+  // Add state for active tab
+  const [activeTab, setActiveTab] = useState("buttons");
+
   return (
     <div className="container mx-auto py-10 px-4 space-y-12">
       <div className="space-y-4">
@@ -158,8 +161,27 @@ export default function ComponentTestPage() {
         </p>
       </div>
 
-      <Tabs defaultValue="buttons" className="w-full">
-        <TabsList className="mb-4 grid w-full grid-cols-2 md:grid-cols-7">
+      {/* Mobile: Select Dropdown */}
+      <div className="md:hidden w-full mb-4">
+        <Select value={activeTab} onValueChange={setActiveTab}>
+          <SelectTrigger className="w-full">
+            <SelectValue placeholder="Select component category" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="buttons">Buttons</SelectItem>
+            <SelectItem value="inputs">Inputs</SelectItem>
+            <SelectItem value="forms">Forms</SelectItem>
+            <SelectItem value="layout">Layout</SelectItem>
+            <SelectItem value="data-display">Data Display</SelectItem>
+            <SelectItem value="overlays">Overlays</SelectItem>
+            <SelectItem value="misc">Misc</SelectItem>
+          </SelectContent>
+        </Select>
+      </div>
+
+      {/* Desktop: Tabs */}
+      <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+        <TabsList className="mb-4 hidden md:grid w-full md:grid-cols-7">
           <TabsTrigger value="buttons">Buttons</TabsTrigger>
           <TabsTrigger value="inputs">Inputs</TabsTrigger>
           <TabsTrigger value="forms">Forms</TabsTrigger>
