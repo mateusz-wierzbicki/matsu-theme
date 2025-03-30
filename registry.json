@@ -14,33 +14,6 @@
           "type": "registry:component"
         }
       ]
-    },
-    {
-      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "custom-theme",
-      "type": "registry:theme",
-      "cssVars": {
-        "light": {
-          "background": "oklch(1 0 0)",
-          "foreground": "oklch(0.141 0.005 285.823)",
-          "primary": "oklch(0.546 0.245 262.881)",
-          "primary-foreground": "oklch(0.97 0.014 254.604)",
-          "ring": "oklch(0.746 0.16 232.661)",
-          "sidebar-primary": "oklch(0.546 0.245 262.881)",
-          "sidebar-primary-foreground": "oklch(0.97 0.014 254.604)",
-          "sidebar-ring": "oklch(0.746 0.16 232.661)"
-        },
-        "dark": {
-          "background": "oklch(1 0 0)",
-          "foreground": "oklch(0.141 0.005 285.823)",
-          "primary": "oklch(0.707 0.165 254.624)",
-          "primary-foreground": "oklch(0.97 0.014 254.604)",
-          "ring": "oklch(0.707 0.165 254.624)",
-          "sidebar-primary": "oklch(0.707 0.165 254.624)",
-          "sidebar-primary-foreground": "oklch(0.97 0.014 254.604)",
-          "sidebar-ring": "oklch(0.707 0.165 254.624)"
-        }
-      }
     }
   ]
 }
