@@ -45,32 +45,31 @@
       "sidebar-ring": "oklch(0.71 0.005 0)"
     }
   },
-    "css": {
-      "texture": {
-        "background-image": "url(https://matsu-theme.vercel.app/texture.jpg)",
-        "background-size": "100% 100%",
-        "background-repeat": "repeat",
-        "opacity": "0.12",
-        "mix-blend-mode": "multiply",
-        "z-index": "100",
-        "position": "fixed",
-        "inset": "0",
-        "width": "100vw",
-        "height": "100vh",
-        "pointer-events": "none"
-      },
-      "border": {
-        "border-width": "2px"
-      },
-      "shadow-primary": {
-        "box-shadow": "0 2px 0 0 var(--primary-border)"
-      },
-      "shadow-destructive": {
-        "box-shadow": "0 2px 0 0 var(--destructive)"
-      },
-      "shadow-destructive-border": {
-        "box-shadow": "0 2px 0 0 var(--destructive-border)"
-      }
+  "css": {
+    "texture": {
+      "background-image": "url(https://matsu-theme.vercel.app/texture.jpg)",
+      "background-size": "100% 100%",
+      "background-repeat": "repeat",
+      "opacity": "0.12",
+      "mix-blend-mode": "multiply",
+      "z-index": "100",
+      "position": "fixed",
+      "inset": "0",
+      "width": "100vw",
+      "height": "100vh",
+      "pointer-events": "none"
+    },
+    "border": {
+      "border-width": "2px"
+    },
+    "shadow-primary": {
+      "box-shadow": "0 2px 0 0 var(--primary-border)"
+    },
+    "shadow-destructive": {
+      "box-shadow": "0 2px 0 0 var(--destructive)"
+    },
+    "shadow-destructive-border": {
+      "box-shadow": "0 2px 0 0 var(--destructive-border)"
     }
   }
 }
