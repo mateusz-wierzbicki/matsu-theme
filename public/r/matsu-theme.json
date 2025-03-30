@@ -1,14 +1,20 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "matsu-theme",
-  "type": "registry:theme",
-  "cssVars": {
-    "theme": {
-      "font-sans": "Nunito, sans-serif",
-      "font-serif": "PT Serif, serif"
-    },
-    "light": {
-      "background": "oklch(0.91 0.048 83.6)"
+  "name": "matsu-style-css",
+  "type": "registry:style",
+  "css": {
+    "texture": {
+      "background-image": "url(https://matsu-theme.vercel.app/texture.jpg)",
+      "background-size": "100% 100%",
+      "background-repeat": "repeat",
+      "opacity": "0.12",
+      "mix-blend-mode": "multiply",
+      "z-index": "100",
+      "position": "fixed",
+      "inset": "0",
+      "width": "100vw",
+      "height": "100vh",
+      "pointer-events": "none"
     }
   }
 }
