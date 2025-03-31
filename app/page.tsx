@@ -16,10 +16,8 @@ function CopyableCode({ content }: { content: string }) {
   };
 
   return (
-    <div className="relative flex items-center text-left gap-2 bg-muted p-2 pl-4 rounded-md text-sm group">
-      <code className="whitespace-pre overflow-x-auto max-w-full w-full">
-        {content}
-      </code>
+    <div className="relative flex text-left gap-2 bg-muted p-2 pl-4 rounded-md text-sm !font-[500] max-w-full border border-border">
+      <code className="whitespace-pre-line">{content}</code>
       <Button variant="outline" size="icon" onClick={copyToClipboard}>
         {copied ? <Check /> : <Copy />}
       </Button>
@@ -147,6 +145,18 @@ export default function RootLayout({
 }`}
             />
           </div>
+        </div>
+        <div className="flex flex-col items-center justify-center text-center p-6 rounded-lg bg-muted w-full mt-12">
+          <h2 className="text-2xl font-semibold font-serif mb-3">
+            Check out Pro Blocks
+          </h2>
+          <p className="text-muted-foreground mb-4">
+            Over 100+ pre-built components and sections for Figma & React for
+            your next shadcn/ui project.
+          </p>
+          <Link href="https://www.shadcndesign.com/pro-blocks" target="_blank">
+            <Button>View Pro Blocks</Button>
+          </Link>
         </div>
       </div>
     </div>
