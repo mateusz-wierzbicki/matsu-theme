@@ -8,10 +8,15 @@
       "type": "registry:component",
       "title": "Login",
       "description": "A login page",
-      "registryDependencies": ["avatar", "image"],
+      "registryDependencies": ["avatar"],
       "files": [
         {
           "path": "app/login/page.tsx",
+          "type": "registry:component",
+          "target": "app"
+        },
+        {
+          "path": "components/login-form.tsx",
           "type": "registry:component"
         }
       ]
