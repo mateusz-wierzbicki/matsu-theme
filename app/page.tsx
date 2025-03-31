@@ -8,7 +8,7 @@ export default function Page() {
     <div className="container mx-auto px-4 py-12 md:py-24">
       <div className="flex flex-col items-center justify-center text-center max-w-2xl mx-auto">
         <Avatar className="w-16 h-16 mb-12 border-2 border-border">
-          <AvatarImage src="/matsu.png" />
+          <AvatarImage src="https://matsu-theme.vercel.app/matsu.png" />
           <AvatarFallback>MW</AvatarFallback>
         </Avatar>
         <div className="space-y-6">

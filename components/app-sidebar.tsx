@@ -161,7 +161,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             >
               <a href="#">
                 <Avatar>
-                  <AvatarImage src="/matsu.png" />
+                  <AvatarImage src="https://matsu-theme.vercel.app/matsu.png" />
                   <AvatarFallback>MW</AvatarFallback>
                 </Avatar>
                 <span className="text-base font-bold font-serif">

@@ -4,6 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --font-weight-light: 700;
+  --font-weight-medium: 700;
+  --font-weight-normal: 700;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-nunito);
@@ -153,12 +156,24 @@
     @apply bg-background text-foreground font-sans font-bold;
   }
 
-  .font-medium {
-    font-weight: 700 !important;
-  }
-
   .border {
     border-width: 2px !important;
+  }
+
+  .border-l {
+    border-left-width: 2px !important;
+  }
+
+  .border-r {
+    border-right-width: 2px !important;
+  }
+
+  .border-t {
+    border-top-width: 2px !important;
+  }
+
+  .border-b {
+    border-bottom-width: 2px !important;
   }
 
   .shadow-primary {
