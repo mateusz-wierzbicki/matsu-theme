@@ -48,7 +48,11 @@ export default function Page() {
               shadcn/ui
             </a>{" "}
             made by{" "}
-            <a target="_blank" href="https://x.com/matsugfx">
+            <a
+              target="_blank"
+              className="underline hover:text-primary transition-colors"
+              href="https://x.com/matsugfx"
+            >
               Matt Wierzbicki
             </a>
           </p>
