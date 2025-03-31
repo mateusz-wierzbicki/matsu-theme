@@ -4,25 +4,14 @@
   "homepage": "https://matsu-theme.vercel.app",
   "items": [
     {
-      "name": "button",
+      "name": "login",
       "type": "registry:component",
-      "title": "Button",
-      "description": "A button component",
+      "title": "Login",
+      "description": "A login page",
+      "registryDependencies": ["avatar", "image"],
       "files": [
         {
-          "path": "components/ui/button.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "input",
-      "type": "registry:component",
-      "title": "Input",
-      "description": "An input component",
-      "files": [
-        {
-          "path": "components/ui/input.tsx",
+          "path": "app/login/page.tsx",
           "type": "registry:component"
         }
       ]
