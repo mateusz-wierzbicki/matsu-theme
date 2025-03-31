@@ -20,6 +20,19 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "matsu-theme-components",
+      "type": "registry:component",
+      "title": "Matsu Theme Components",
+      "description": "A collection of components for the Matsu Theme",
+      "files": [
+        {
+          "path": "components/ui/button.tsx",
+          "type": "registry:component",
+          "target": "components/ui"
+        }
+      ]
     }
   ]
 }

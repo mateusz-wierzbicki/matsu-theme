@@ -1,4 +1,3 @@
-// import { GalleryVerticalEnd } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
 
@@ -12,7 +11,7 @@ export default function LoginPage() {
           <a href="#" className="flex items-center gap-3 font-bold font-serif">
             <div className="bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md">
               <Avatar>
-                <AvatarImage src="/matsu.png" />
+                <AvatarImage src="https://matsu-theme.vercel.app/matsu.png" />
                 <AvatarFallback>MW</AvatarFallback>
               </Avatar>
             </div>
@@ -27,7 +26,7 @@ export default function LoginPage() {
       </div>
       <div className="bg-muted relative hidden lg:block">
         <Image
-          src="/house.png"
+          src="https://matsu-theme.vercel.app/house.png"
           alt="Image"
           className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
           fill
