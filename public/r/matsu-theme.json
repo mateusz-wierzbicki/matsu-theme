@@ -9,7 +9,14 @@
       "font-weight-medium": "700",
       "font-weight-semibold": "700",
       "font-sans": "var(--font-nunito)",
-      "font-serif": "var(--font-pt-serif)"
+      "font-serif": "var(--font-pt-serif)",
+      "shadow-xs": "0 2px 0 0 var(--border)",
+      "shadow-sm": "0 2px 0 0 var(--border)",
+      "shadow-md": "0 2px 0 0 var(--border)",
+      "shadow-lg": "0 2px 0 0 var(--border)",
+      "shadow-xl": "0 2px 0 0 var(--border)",
+      "shadow-2xl": "0 2px 0 0 var(--border)",
+      "shadow-3xl": "0 2px 0 0 var(--border)"
     },
     "light": {
       "background": "oklch(0.91 0.048 83.6)",
@@ -51,31 +58,31 @@
   },
   "css": {
     "@layer base": {
-      "border": {
+      ".border": {
         "border-width": "2px !important"
       },
-      "border-l": {
+      ".border-l": {
         "border-left-width": "2px !important"
       },
-      "border-r": {
+      ".border-r": {
         "border-right-width": "2px !important"
       },
-      "border-t": {
+      ".border-t": {
         "border-top-width": "2px !important"
       },
-      "border-b": {
+      ".border-b": {
         "border-bottom-width": "2px !important"
       },
-      "shadow-primary": {
+      ".shadow-primary": {
         "box-shadow": "0 2px 0 0 var(--primary-border)"
       },
-      "shadow-destructive": {
+      ".shadow-destructive": {
         "box-shadow": "0 2px 0 0 var(--destructive)"
       },
-      "shadow-destructive-border": {
+      ".shadow-destructive-border": {
         "box-shadow": "0 2px 0 0 var(--destructive-border)"
       },
-      "texture": {
+      ".texture": {
         "background-image": "url(https://matsu-theme.vercel.app/texture.jpg)",
         "background-size": "100% 100%",
         "background-repeat": "repeat",
@@ -90,5 +97,6 @@
         "pointer-events": "none"
       }
     }
-  }
+  },
+  "docs": "Remember to add the texture to the div above the body element in your layout.tsx file and import the Nunito and PT Serif fonts."
 }

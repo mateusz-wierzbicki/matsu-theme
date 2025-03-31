@@ -8,7 +8,7 @@
       "type": "registry:component",
       "title": "Login",
       "description": "A login page",
-      "registryDependencies": ["avatar"],
+      "registryDependencies": ["avatar", "button", "input", "label"],
       "files": [
         {
           "path": "app/login/page.tsx",

@@ -4,13 +4,18 @@
   "type": "registry:component",
   "title": "Login",
   "description": "A login page",
-  "registryDependencies": ["avatar", "button", "input", "label"],
+  "registryDependencies": [
+    "avatar",
+    "button",
+    "input",
+    "label"
+  ],
   "files": [
     {
       "path": "app/login/page.tsx",
       "content": "// import { GalleryVerticalEnd } from \"lucide-react\";\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\nimport Image from \"next/image\";\n\nimport { LoginForm } from \"@/components/login-form\";\n\nexport default function LoginPage() {\n  return (\n    <div className=\"grid min-h-svh lg:grid-cols-2\">\n      <div className=\"flex flex-col gap-4 p-6 md:p-10\">\n        <div className=\"flex justify-center gap-2 md:justify-start\">\n          <a href=\"#\" className=\"flex items-center gap-3 font-bold font-serif\">\n            <div className=\"bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md\">\n              <Avatar>\n                <AvatarImage src=\"/matsu.png\" />\n                <AvatarFallback>MW</AvatarFallback>\n              </Avatar>\n            </div>\n            Matsu Theme\n          </a>\n        </div>\n        <div className=\"flex flex-1 items-center justify-center\">\n          <div className=\"w-full max-w-xs\">\n            <LoginForm />\n          </div>\n        </div>\n      </div>\n      <div className=\"bg-muted relative hidden lg:block\">\n        <Image\n          src=\"/house.png\"\n          alt=\"Image\"\n          className=\"absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale\"\n          fill\n          sizes=\"50vw\"\n          priority\n        />\n      </div>\n    </div>\n  );\n}\n",
       "type": "registry:component",
-      "target": "app/login/page.tsx"
+      "target": "app"
     },
     {
       "path": "components/login-form.tsx",
