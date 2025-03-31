@@ -4,24 +4,6 @@
   "homepage": "https://matsu-theme.vercel.app",
   "items": [
     {
-      "name": "login",
-      "type": "registry:component",
-      "title": "Login",
-      "description": "A login page",
-      "registryDependencies": ["avatar", "button", "input", "label"],
-      "files": [
-        {
-          "path": "app/login/page.tsx",
-          "type": "registry:component",
-          "target": "app"
-        },
-        {
-          "path": "components/login-form.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
       "name": "matsu-theme-components",
       "type": "registry:component",
       "title": "Matsu Theme Components",
@@ -30,7 +12,232 @@
         {
           "path": "components/ui/button.tsx",
           "type": "registry:component",
-          "target": "components/ui"
+          "target": "components/ui/button.tsx"
+        },
+        {
+          "path": "components/ui/input.tsx",
+          "type": "registry:component",
+          "target": "components/ui/input.tsx"
+        },
+        {
+          "path": "components/ui/label.tsx",
+          "type": "registry:component",
+          "target": "components/ui/label.tsx"
+        },
+        {
+          "path": "components/ui/accordion.tsx",
+          "type": "registry:component",
+          "target": "components/ui/accordion.tsx"
+        },
+        {
+          "path": "components/ui/alert-dialog.tsx",
+          "type": "registry:component",
+          "target": "components/ui/alert-dialog.tsx"
+        },
+        {
+          "path": "components/ui/alert.tsx",
+          "type": "registry:component",
+          "target": "components/ui/alert.tsx"
+        },
+        {
+          "path": "components/ui/aspect-ratio.tsx",
+          "type": "registry:component",
+          "target": "components/ui/aspect-ratio.tsx"
+        },
+        {
+          "path": "components/ui/avatar.tsx",
+          "type": "registry:component",
+          "target": "components/ui/avatar.tsx"
+        },
+        {
+          "path": "components/ui/badge.tsx",
+          "type": "registry:component",
+          "target": "components/ui/badge.tsx"
+        },
+        {
+          "path": "components/ui/breadcrumb.tsx",
+          "type": "registry:component",
+          "target": "components/ui/breadcrumb.tsx"
+        },
+        {
+          "path": "components/ui/calendar.tsx",
+          "type": "registry:component",
+          "target": "components/ui/calendar.tsx"
+        },
+        {
+          "path": "components/ui/carousel.tsx",
+          "type": "registry:component",
+          "target": "components/ui/carousel.tsx"
+        },
+        {
+          "path": "components/ui/card.tsx",
+          "type": "registry:component",
+          "target": "components/ui/card.tsx"
+        },
+        {
+          "path": "components/ui/chart.tsx",
+          "type": "registry:component",
+          "target": "components/ui/chart.tsx"
+        },
+        {
+          "path": "components/ui/checkbox.tsx",
+          "type": "registry:component",
+          "target": "components/ui/checkbox.tsx"
+        },
+        {
+          "path": "components/ui/collapsible.tsx",
+          "type": "registry:component",
+          "target": "components/ui/collapsible.tsx"
+        },
+        {
+          "path": "components/ui/command.tsx",
+          "type": "registry:component",
+          "target": "components/ui/command.tsx"
+        },
+        {
+          "path": "components/ui/context-menu.tsx",
+          "type": "registry:component",
+          "target": "components/ui/context-menu.tsx"
+        },
+        {
+          "path": "components/ui/dialog.tsx",
+          "type": "registry:component",
+          "target": "components/ui/dialog.tsx"
+        },
+        {
+          "path": "components/ui/drawer.tsx",
+          "type": "registry:component",
+          "target": "components/ui/drawer.tsx"
+        },
+        {
+          "path": "components/ui/dropdown-menu.tsx",
+          "type": "registry:component",
+          "target": "components/ui/dropdown-menu.tsx"
+        },
+        {
+          "path": "components/ui/form.tsx",
+          "type": "registry:component",
+          "target": "components/ui/form.tsx"
+        },
+        {
+          "path": "components/ui/hover-card.tsx",
+          "type": "registry:component",
+          "target": "components/ui/hover-card.tsx"
+        },
+        {
+          "path": "components/ui/input-otp.tsx",
+          "type": "registry:component",
+          "target": "components/ui/input-otp.tsx"
+        },
+        {
+          "path": "components/ui/menubar.tsx",
+          "type": "registry:component",
+          "target": "components/ui/menubar.tsx"
+        },
+        {
+          "path": "components/ui/navigation-menu.tsx",
+          "type": "registry:component",
+          "target": "components/ui/navigation-menu.tsx"
+        },
+        {
+          "path": "components/ui/pagination.tsx",
+          "type": "registry:component",
+          "target": "components/ui/pagination.tsx"
+        },
+        {
+          "path": "components/ui/popover.tsx",
+          "type": "registry:component",
+          "target": "components/ui/popover.tsx"
+        },
+        {
+          "path": "components/ui/progress.tsx",
+          "type": "registry:component",
+          "target": "components/ui/progress.tsx"
+        },
+        {
+          "path": "components/ui/radio-group.tsx",
+          "type": "registry:component",
+          "target": "components/ui/radio-group.tsx"
+        },
+        {
+          "path": "components/ui/resizable.tsx",
+          "type": "registry:component",
+          "target": "components/ui/resizable.tsx"
+        },
+        {
+          "path": "components/ui/scroll-area.tsx",
+          "type": "registry:component",
+          "target": "components/ui/scroll-area.tsx"
+        },
+        {
+          "path": "components/ui/select.tsx",
+          "type": "registry:component",
+          "target": "components/ui/select.tsx"
+        },
+        {
+          "path": "components/ui/separator.tsx",
+          "type": "registry:component",
+          "target": "components/ui/separator.tsx"
+        },
+        {
+          "path": "components/ui/sheet.tsx",
+          "type": "registry:component",
+          "target": "components/ui/sheet.tsx"
+        },
+        {
+          "path": "components/ui/sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/ui/sidebar.tsx"
+        },
+        {
+          "path": "components/ui/skeleton.tsx",
+          "type": "registry:component",
+          "target": "components/ui/skeleton.tsx"
+        },
+        {
+          "path": "components/ui/slider.tsx",
+          "type": "registry:component",
+          "target": "components/ui/slider.tsx"
+        },
+        {
+          "path": "components/ui/sonner.tsx",
+          "type": "registry:component",
+          "target": "components/ui/sonner.tsx"
+        },
+        {
+          "path": "components/ui/switch.tsx",
+          "type": "registry:component",
+          "target": "components/ui/switch.tsx"
+        },
+        {
+          "path": "components/ui/table.tsx",
+          "type": "registry:component",
+          "target": "components/ui/table.tsx"
+        },
+        {
+          "path": "components/ui/tabs.tsx",
+          "type": "registry:component",
+          "target": "components/ui/tabs.tsx"
+        },
+        {
+          "path": "components/ui/textarea.tsx",
+          "type": "registry:component",
+          "target": "components/ui/textarea.tsx"
+        },
+        {
+          "path": "components/ui/toggle-group.tsx",
+          "type": "registry:component",
+          "target": "components/ui/toggle-group.tsx"
+        },
+        {
+          "path": "components/ui/toggle.tsx",
+          "type": "registry:component",
+          "target": "components/ui/toggle.tsx"
+        },
+        {
+          "path": "components/ui/tooltip.tsx",
+          "type": "registry:component",
+          "target": "components/ui/tooltip.tsx"
         }
       ]
     }

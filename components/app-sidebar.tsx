@@ -159,7 +159,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               asChild
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
-              <a href="#">
+              <a href="/">
                 <Avatar>
                   <AvatarImage src="https://matsu-theme.vercel.app/matsu.png" />
                   <AvatarFallback>MW</AvatarFallback>
