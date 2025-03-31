@@ -58,6 +58,9 @@
   },
   "css": {
     "@layer base": {
+      "body": {
+        "font-weight": "var(--font-weight-bold)"
+      },
       ".border": {
         "border-width": "2px !important"
       },
