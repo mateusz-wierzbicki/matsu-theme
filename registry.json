@@ -238,6 +238,41 @@
           "path": "components/ui/tooltip.tsx",
           "type": "registry:component",
           "target": "components/ui/tooltip.tsx"
+        },
+        {
+          "path": "components/ui/masked-image.tsx",
+          "type": "registry:component",
+          "target": "components/ui/masked-image.tsx"
+        },
+        {
+          "path": "public/mask-shape-1.svg",
+          "type": "registry:component",
+          "target": "public/mask-shape-1.svg"
+        },
+        {
+          "path": "public/mask-shape-2.svg",
+          "type": "registry:component",
+          "target": "public/mask-shape-2.svg"
+        },
+        {
+          "path": "public/mask-shape-3.svg",
+          "type": "registry:component",
+          "target": "public/mask-shape-3.svg"
+        },
+        {
+          "path": "public/mask-shape-4.svg",
+          "type": "registry:component",
+          "target": "public/mask-shape-4.svg"
+        },
+        {
+          "path": "public/mask-shape-5.svg",
+          "type": "registry:component",
+          "target": "public/mask-shape-5.svg"
+        },
+        {
+          "path": "public/mask-shape-6.svg",
+          "type": "registry:component",
+          "target": "public/mask-shape-6.svg"
         }
       ]
     }

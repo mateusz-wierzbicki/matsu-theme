@@ -78,6 +78,9 @@ export default function Page() {
               <Link href="/test" target="_blank">
                 <Button>Components</Button>
               </Link>
+              <Link href="/masked-image" target="_blank">
+                <Button>Masked Image</Button>
+              </Link>
             </div>
           </div>
 
@@ -89,7 +92,7 @@ export default function Page() {
               This will override the default variables and add classes to your
               globals.css file.
             </p>
-            <CopyableCode content="npx shadcn@canary add https://matsu-theme.vercel.app/r/matsu-theme.json" />
+            <CopyableCode content="npx shadcn@latest add https://matsu-theme.vercel.app/r/matsu-theme.json" />
           </div>
           <div className="flex flex-col items-center justify-center text-center">
             <h2 className="text-xl font-semibold font-serif mb-3">
@@ -99,7 +102,7 @@ export default function Page() {
               This will override the default components with the Matsu Themed
               components.
             </p>
-            <CopyableCode content="npx shadcn@canary add https://matsu-theme.vercel.app/r/matsu-theme-components.json" />
+            <CopyableCode content="npx shadcn@latest add https://matsu-theme.vercel.app/r/matsu-theme-components.json" />
           </div>
           <div className="flex flex-col items-center justify-center text-center">
             <h2 className="text-xl font-semibold font-serif mb-3">
@@ -155,7 +158,7 @@ export default function RootLayout({
             Check out Pro Blocks
           </h2>
           <p className="text-muted-foreground mb-4">
-            Over 100+ pre-built components and sections for Figma & React for
+            Over 190+ pre-built components and sections for Figma & React for
             your next shadcn/ui project.
           </p>
           <Link href="https://www.shadcndesign.com/pro-blocks" target="_blank">
